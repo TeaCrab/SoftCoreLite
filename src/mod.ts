@@ -154,7 +154,7 @@ export class SoftCoreLite implements IPreAkiLoadMod, IPostDBLoadMod, IPostAkiLoa
         if (modConfig.mag_loadunload_balancer) {
             dbutil.set_prop(["5448bc234bdc2d3c308b4569", "610720f290b75a49ff2e5e25"], ["LoadUnloadModifier"], [MAG_LOADUNLOAD_BALANCER]);
         }
-
+        // Debug utility to verify above changes are actually effective
         if ( modConfig.debug_db ) {
             // Dumping magazine related stats (Including Realism Stats)
             dbutil.dump_prop(["5448bc234bdc2d3c308b4569", "610720f290b75a49ff2e5e25"], ["LoadUnloadModifier", "CheckTimeModifier", "MagSize", "ReloadSpeed"]);
@@ -319,7 +319,7 @@ export class SoftCoreLite implements IPreAkiLoadMod, IPostDBLoadMod, IPostAkiLoa
                 // "Golden_Keychain3",
                 // "Golden_Keycard_Case",
             ]
-            // Default Pockets
+            // Default Special Slot Pockets
             try {
                 for (let i = 0; i<3; i++) {
                     for (const e of allowed_items) {
@@ -333,7 +333,7 @@ export class SoftCoreLite implements IPreAkiLoadMod, IPostDBLoadMod, IPostAkiLoa
                 logger.logWithColor(`[${modName}] : Special Slot filter change failed.`, LogTextColor.RED)
             }
 
-            // Compatibility for SVM Custom Pockets.
+            // Compatibility for SVM Custom Special Slot Pockets.
             try {
                 if ( typeof db.templates.items["CustomPocket"] !== "undefined" ) {
                     for (let i = 0; i<3; i++) {
@@ -347,7 +347,7 @@ export class SoftCoreLite implements IPreAkiLoadMod, IPostDBLoadMod, IPostAkiLoa
                 }
                 logger.logWithColor(`[${modName}] : Custom Pocket filter set. (Not Required)`, LogTextColor.GREEN)
             } catch (error) {
-                logger.logWithColor(`[${modName}] : Custom Pocket not found. (Not Required)`, LogTextColor.RED)
+                logger.logWithColor(`[${modName}] : Custom Pocket not found. (Not Required)`, LogTextColor.YELLOW)
             }
         } else {
             logger.logWithColor(`[${modName}] : Special slots filter change disabled.`, LogTextColor.WHITE);

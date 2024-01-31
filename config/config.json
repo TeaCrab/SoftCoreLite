@@ -1,8 +1,8 @@
 {
     "debug" : false,
     "debug_db" : false,
-    "health_per_level": false,
-    "custom_items": false,
+    "health_per_level": true,
+    "custom_items": true,
     "stash_size_rebalance": true,
     "item_rediscover": true,
     "bot_sound_rebalance": true,

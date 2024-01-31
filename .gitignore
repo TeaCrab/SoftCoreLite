@@ -5,7 +5,9 @@
 
 # DB Dump
 aki/*
-*.js
+aki/*.*
+**/*.js
+**/*.js.map
 
 # User-specific files
 *.rsuser

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.export_json = exports.DB_UTIL = exports.MAG_LOADUNLOAD_BALANCER = exports.DIV5 = exports.BOOKMARKS = exports.NICKNAMES = exports.HANDBOOK = exports.TRADERS = exports.ITEMTREE = exports.ITEM_IDS = exports.ITEM_REL = exports.BOOKTREE = exports.BOOK_IDS = exports.BOOK_REL = exports.SPTRM = void 0;
+exports.export_json = exports.DB_UTIL = exports.MAG_LOADUNLOAD_BALANCER = exports.BOOKMARKS = exports.NICKNAMES = exports.HANDBOOK = exports.TRADERS = exports.ITEMTREE = exports.ITEM_IDS = exports.ITEM_REL = exports.BOOKTREE = exports.BOOK_IDS = exports.BOOK_REL = exports.SPTRM = void 0;
 const fs = require("fs");
 const path = require("path");
 const modName = `SoftCoreLite`;
@@ -15,8 +15,8 @@ const AKI_HANDBOOK = require("../../../../../Aki_Data/Server/database/templates/
 const AKI_LOCALES = require("../../../../../Aki_Data/Server/database/locales/global/en.json");
 const AKI_ITEMS = require("../../../../../Aki_Data/Server/database/templates/items.json");
 const AKI_GLOBALS = require("../../../../../Aki_Data/Server/database/globals.json");
-//Keep the order of the keys
 //SPTRM default values - meaning the properties are not in use
+//Keep the order of the keys
 exports.SPTRM = {
     ModType: "undefined",
     VerticalRecoil: "0",
@@ -90,10 +90,6 @@ function checkProp(prop, subject) {
     }
     return false;
 }
-function DIV5(dividend) {
-    return ~~(dividend / 5);
-}
-exports.DIV5 = DIV5;
 function MAG_LOADUNLOAD_BALANCER(dividend) {
     if (dividend > 0) {
         return Math.ceil((~~(dividend / 5)) / 5) * 5;
@@ -232,6 +228,7 @@ function grow(tree, buds, branch, _ID_REFERENCE) {
 function trim(tree, level = -1) {
     // Remove leaves or branches
     for (let i = 0; i > level && i + age(tree) >= 0; i--) {
+        // To be implemented
     }
 }
 function age(tree, level = 0) {
@@ -309,6 +306,7 @@ function JSON_itemtree(filename = "itemtree") {
 }
 function JSON_itemtree_trimmed(filename = "itemtree_trimmed") {
     // Remove all leaf items in the ITEMTREE
+    // To be implemented
 }
 function JSON_handbook(filename = "book") {
     // Generate KeyName:ID pairing table from already processed BOOK_REL record

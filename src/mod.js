@@ -43,7 +43,7 @@ class SoftCoreLite {
     PMC_HP;
     PMC_LV;
     SCAV_HP;
-    SCAV_LV;
+    // private SCAV_LV : number;
     calcPMCHealth(bodyPart, accountLevel, preset) {
         for (let key in this.BaseHealth) {
             var premax = bodyPart[key].Health.Maximum;
@@ -73,7 +73,7 @@ class SoftCoreLite {
                             this.PMC_LV = profileHelper.getPmcProfile(sessionID).Info.Level;
                             this.calcPMCHealth(this.PMC_HP, this.PMC_LV, this.BaseHealth);
                             this.SCAV_HP = profileHelper.getScavProfile(sessionID).Health.BodyParts;
-                            this.SCAV_LV = profileHelper.getScavProfile(sessionID).Info.Level;
+                            // this.SCAV_LV = profileHelper.getScavProfile(sessionID).Info.Level;
                             // this.calcSCAVHealth(this.SCAV_HP, this.SCAV_LV, this.BaseHealth);
                             this.calcSCAVHealth(this.SCAV_HP, this.PMC_LV, this.BaseHealth); // Player Scav gets bonus from PMC level.
                             logger.logWithColor(`[${modName}] : Player health change applied.`, LogTextColor_1.LogTextColor.GREEN);
@@ -92,7 +92,7 @@ class SoftCoreLite {
                             this.PMC_LV = profileHelper.getPmcProfile(sessionID).Info.Level;
                             this.calcPMCHealth(this.PMC_HP, this.PMC_LV, this.BaseHealth);
                             this.SCAV_HP = profileHelper.getScavProfile(sessionID).Health.BodyParts;
-                            this.SCAV_LV = profileHelper.getScavProfile(sessionID).Info.Level;
+                            // this.SCAV_LV = profileHelper.getScavProfile(sessionID).Info.Level;
                             // this.calcSCAVHealth(this.SCAV_HP, this.SCAV_LV, this.BaseHealth);
                             this.calcSCAVHealth(this.SCAV_HP, this.PMC_LV, this.BaseHealth); // Player Scav gets bonus from PMC level.
                             logger.logWithColor(`[${modName}] : Player health change applied.`, LogTextColor_1.LogTextColor.GREEN);
@@ -260,14 +260,14 @@ class SoftCoreLite {
                         botTypes[type].skills.Common.BotReload.max = 3500;
                     }
                 }
-                logger.logWithColor(`[${modName}] : Bots are no longer perfectly cold or silent.`, LogTextColor_1.LogTextColor.GREEN);
+                logger.logWithColor(`[${modName}] : Bots(Cultists) are no longer perfectly cold(Experimental) or silent.`, LogTextColor_1.LogTextColor.GREEN);
             }
             catch (error) {
-                logger.logWithColor(`[${modName}] : Bot changes Failed`, LogTextColor_1.LogTextColor.RED);
+                logger.logWithColor(`[${modName}] : Bots(Cultists) changes Failed`, LogTextColor_1.LogTextColor.RED);
             }
         }
         else {
-            logger.logWithColor(`[${modName}] : Bot sound rebalance disabled.`, LogTextColor_1.LogTextColor.WHITE);
+            logger.logWithColor(`[${modName}] : Bots(Cultists) sound rebalance disabled.`, LogTextColor_1.LogTextColor.WHITE);
         }
         // Special Slot Allowed Items
         if (modConfig.special_slot_filter === true) {

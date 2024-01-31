@@ -123,6 +123,8 @@ class Items {
         }
     }
     addToMastering(id, masteringCat) {
+        // Plan to make this feature capable of generating the full-weapon preset picture
+        // Currently this function only makes the Skill Mastering UI to show the core component of a newly added weapon
         let mastering = this.tables.globals.config.Mastering;
         for (let cat in mastering) {
             if (mastering[cat].Name === masteringCat) {

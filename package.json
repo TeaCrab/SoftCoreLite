@@ -1,9 +1,9 @@
 {
 	"name": "SoftCoreLite",
-	"version": "1.0.0",
+	"version": "0.9.9",
 	"main": "src/mod.js",
-	"license": "MIT",
-	"author": "Various",
+	"license": "CC-BY-NC-SA 3.0",
+	"author": "TeaC, Various",
 	"akiVersion": "3.7.6",
 	"scripts": {
 		"setup": "npm i",

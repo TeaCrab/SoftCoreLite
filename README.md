@@ -4,17 +4,20 @@ This is a personal mod project for SPT, configuring/trimming/modifying/adding th
 
 A project that helps me learn Typescript:
 
-I ask anyone who's an awesome fellow coder to interject before I do something utterly unacceptable!  Like... loop for one uncessary more time that I had to, or I should just go learn Rust intead of this Overzealous Javascript Guardian of a language.
+I ask anyone who's an awesome fellow coder to interject before I do something utterly unacceptable.
+
+Like... loop for one unnecessary more time than I had to, or I should just go learn Rust instead of this Overzealous Javascript Guardian of a language.
 
 ---
 
 ## What this mod does
 
 ### The small collection of things I fine-tuned for my own amusement:
+Everything can be turned-off using the config.json
 
 *   My own implementation of [Health Per Level]
 
-    HP of bodyparts does not increase per level, rather:
+    HP of body parts does not increase per level, rather:
     *   Body part gets bonus HP per set amount of levels
     *   Each body part gets a set amount of bonus HP to balance it out over the levels
 
@@ -39,17 +42,19 @@ I ask anyone who's an awesome fellow coder to interject before I do something ut
 
     Currently only deals with individual items/weapon mods.
 
-    Seem to work with [Algorithmic Level Progression]
-
     Since item cloning ultimately is only done once at the server load, performance implication of this is going to be ignored.  I also do not have an excess of knowledge to write performant code.  I only know to perform massive loops or recursions as few times as possible.
 
 *   Skeleton code of post-mod-database item-property rebalancing feature
 
-    Currently, only the Ammo Load/Unload speed of all magazines are being rebalanced.  The negative effect is "LERPed" to max out at about 20%, and positive effect is unaffected.
+    Currently, only the Ammo Load/Unload speed of all magazines are being rebalanced.
+
+    The negative effect is "LERPed" to max out at about 20%, and positive effect is unaffected.
 
 *   Database debugging utilities
 
-    These functions in db.ts helps modder make sense of SPT's JSON data structure and provide tools and workarounds to automate/simplify some database related activities such as the two features described above
+    These functions in db.ts helps modder make sense of SPT's JSON data structure and provides basics for debugging/automating/simplifying some database related activities such as the two features described above
+
+    I'm personally proud of the names I've given to the grow() function and I will hear no alternatives.
 
     This is likely to be heavily affected when SPT's database-structure changes
 
