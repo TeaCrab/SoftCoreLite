@@ -1,0 +1,1 @@
+{"_id":"62f109593b54472778797866","_name":"RandomLootContainer","_parent":"566168634bdc2d144c8b456c","_props":{"RandomLootSettings":{"allowToSpawnIdenticalItems":false,"allowToSpawnQuestItems":false,"countByRarity":[],"excluded":{"categoryTemplates":[],"rarity":["Not_exist"],"templates":[]},"filters":[],"findInRaid":true,"maxCount":0,"minCount":0}},"_type":"Node"}

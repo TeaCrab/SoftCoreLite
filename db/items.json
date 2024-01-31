@@ -1,0 +1,89 @@
+{
+    "mag_366tkm_10r": {
+        "CloneOf": "5de653abf76fdc1ce94a5a2a",
+        "Type": "magazines",
+        "_Locales": {
+            "Description": "No one knows who made these, and no one cared.  If your life depended on that 6th shot in a \"Gornostay\", you are probably done for.",
+            "Name": "VPO-215 \"Gornostay\" .366 TKM 10-round magazine",
+            "ShortName": "VPO-10r"
+        },
+        "_Procurement": {
+            "Currency": "Roubles",
+            "Loyalty": 1,
+            "Price": 7500,
+            "Stock": 2,
+            "Trader": "skier"
+        },
+        "_Properties": {
+            "CheckTimeModifier": 15,
+            "ConflictingItems": [],
+            "Ergonomics": -2,
+            "ExtraSizeDown": 1,
+            "Height": 2,
+            "LoadUnloadModifier": 30,
+            "MagSize": 10,
+            "MalfunctionChance": 0.05,
+            "ReloadSpeed": -15,
+            "VisibleAmmoRangesString": "1-3;5-10",
+            "Weight": 0.29,
+            "Width": 1
+        }
+    },
+    "mag_pm_izhmeh_9x18pm_12r": {
+        "CloneOf": "5448c12b4bdc2d02308b456f",
+        "Type": "magazines",
+        "_Locales": {
+            "Description": "A extended 12-round magazine for Izhmekh-produced Makarov PM",
+            "Name": "PM 9x18PM 12-round extended magazine",
+            "ShortName": "PM12"
+        },
+        "_Procurement": {
+            "Currency": "Roubles",
+            "Loyalty": 1,
+            "Price": 5500,
+            "Stock": 2,
+            "Trader": "skier"
+        },
+        "_Properties": {
+            "CheckTimeModifier": 15,
+            "ConflictingItems": [],
+            "Ergonomics": -5,
+            "Height": 1,
+            "LoadUnloadModifier": 15,
+            "MagSize": 12,
+            "MalfunctionChance": 0.06,
+            "ReloadSpeed": -15,
+            "VisibleAmmoRangesString": "1-1;6-12",
+            "Weight": 0.08,
+            "Width": 1
+        }
+    },
+    "mag_tt109_13r": {
+        "CloneOf": "571a29dc2459771fb2755a6a",
+        "Type": "magazines",
+        "_Locales": {
+            "Description": "This mysteriously new magazine saved a lot of scav lives.",
+            "Name": "TT 7.62x25 tt-109 13-round magazine",
+            "ShortName": "tt-109"
+        },
+        "_Procurement": {
+            "Currency": "Roubles",
+            "Loyalty": 1,
+            "Price": 7000,
+            "Stock": 2,
+            "Trader": "skier"
+        },
+        "_Properties": {
+            "CheckTimeModifier": 10,
+            "Ergonomics": -3,
+            "Height": 1,
+            "LoadUnloadModifier": 20,
+            "MagSize": 13,
+            "MalfunctionChance": 0.07,
+            "ReloadSpeed": -15,
+            "VisibleAmmoRangesString": "1-1;6-13",
+            "Weight": 0.11,
+            "Width": 1
+        }
+    }
+}

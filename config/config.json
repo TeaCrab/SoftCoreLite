@@ -1,0 +1,11 @@
+{
+    "debug" : false,
+    "debug_db" : false,
+    "health_per_level": false,
+    "custom_items": false,
+    "stash_size_rebalance": true,
+    "item_rediscover": true,
+    "bot_sound_rebalance": true,
+    "special_slot_filter": true,
+    "mag_loadunload_balancer": true
+}
