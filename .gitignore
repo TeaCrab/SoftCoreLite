@@ -8,6 +8,7 @@ aki/*
 aki/*.*
 *.js
 *.js.map
+.vscode
 
 # User-specific files
 *.rsuser
