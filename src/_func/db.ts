@@ -108,6 +108,10 @@ function checkProp(prop, subject):boolean {
         switch (prop) {
             case "MagSize":
                 if (subject.Cartridges !== undefined ?? false) return true
+                break;
+            case "Armor":
+                console.log(`[${modName}.debug] returnProp() of ${prop} - to do.`);
+                break;
             default:
                 return false
         }

@@ -6,6 +6,10 @@
 # DB Dump
 aki/*
 aki/*.*
+!aki/bookmarks_extra.json
+!aki/nicknames_extra.json
+!aki/sptrm_stats.json
+!aki/sptrm_index.json
 .vscode/*
 .vscode/*.*
 .fail/*
