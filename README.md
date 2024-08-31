@@ -2,12 +2,6 @@
 
 This is a personal mod project for SPT, configuring/trimming/modifying/adding things from the projects listed at the end of this README.
 
-A project that helps me learn Typescript:
-
-I ask anyone who's an awesome fellow coder to interject before I do something utterly unacceptable.
-
-Like... loop for one unnecessary more time than I had to, or I should just go learn Rust instead of this Overzealous Javascript Guardian of a language.
-
 ---
 
 ## What this mod does
