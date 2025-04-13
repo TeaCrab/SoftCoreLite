@@ -55,10 +55,10 @@ Everything can be turned-off using the config.json
 ## Credits
 
 This project uses, modifies and takes inspiration from following SPT-Mods/github repositories:
-*   HotCultists by Echo55
-*   https://github.com/odt1/ODT-Softcore
-*   https://github.com/Capataina/HealthPerLevel
-*   https://github.com/jbs4bmx/SpecialSlots
-*   https://github.com/space-commits/SPT-Realism-Mod-Server
+*   Echo55's HotCultists
+*   odt1 at https://github.com/odt1/ODT-Softcore
+*   Capataina at https://github.com/Capataina/HealthPerLevel
+*   jbs4bmx at https://github.com/jbs4bmx/SpecialSlots
+*   space-commits at https://github.com/space-commits/SPT-Realism-Mod-Server
 
 Credits to the authors of these mods/repositories
