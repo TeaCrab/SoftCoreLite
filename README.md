@@ -60,5 +60,3 @@ This project uses, modifies and takes inspiration from following SPT-Mods/github
 *   Capataina at https://github.com/Capataina/HealthPerLevel
 *   jbs4bmx at https://github.com/jbs4bmx/SpecialSlots
 *   space-commits at https://github.com/space-commits/SPT-Realism-Mod-Server
-
-Credits to the authors of these mods/repositories
